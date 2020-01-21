@@ -8,13 +8,14 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
-
+import MyMixin from './mixin.js'
 @Component({
   components: {
     HelloWorld,
   },
 })
-export default class App extends Vue {}
+// extends mixins(MyMixin) 
+export default class App extends Vue{}
 </script>
 
 <style>
